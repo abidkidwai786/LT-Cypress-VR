@@ -1,0 +1,46 @@
+{
+  "lambdatest_auth": {
+    "username": "username",
+    "access_key": "access_key"
+  },
+  "browsers": [
+    {
+      "browser": "chrome",
+      "platform": "MacOS Big sur",
+      "versions": [
+        "90.0"
+      ]
+    }
+  ],
+  "run_settings": {
+    "cypress_config_file": "cypress.json",
+    "build_name": "Visual Regression",
+    "parallels": 100,
+    "visual": true,
+    "fixed_ip": "",
+    "network": true,
+    "cypress_version": "9.0.0",
+    "specs": "cypress/integration/1-getting-started/vui1.spec.js",
+    "smart_ui": {
+      "project": "demo-Cypress-VUI",
+      "options": {
+        "output": {
+          "errorColor": {
+            "red": "204",
+            "green": "102",
+            "blue": "102"
+          },
+          "errorType": "movement",
+          "transparency": 0.1,
+          "largeImageThreshold": 1200,
+          "useCrossOrigin": false,
+          "outputDiff": true
+        }
+      }
+    },
+    "tunnel_settings": {
+      "tunnel": false,
+      "tunnelName": null
+    }
+  }
+}
