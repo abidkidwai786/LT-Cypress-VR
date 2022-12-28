@@ -18,8 +18,10 @@
     "parallels": 100,
     "visual": true,
     "fixed_ip": "",
-    "network": true,
-    "cypress_version": "9.0.0",
+    "network": false,
+    "npm_dependencies": {
+      "cypress": "9.0.0"
+    },
     "specs": "cypress/integration/1-getting-started/vui1.spec.js",
     "smart_ui": {
       "project": "demo-Cypress-VUI",
